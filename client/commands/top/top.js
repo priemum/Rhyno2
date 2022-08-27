@@ -7,7 +7,7 @@ module.exports = {
     
      let guild = await o.find({id: msg.channel.guild.id})
 if(guild.length < 1){
-guild = [{lang: "en"}]
+guild = [{lang: "en"}]             
 }
 let lang = guild[0].lang || "en"
     
